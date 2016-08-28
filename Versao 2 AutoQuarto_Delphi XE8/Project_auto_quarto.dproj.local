@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/07/23 16:21:16.000.551,=C:\Users\nanoTech\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/07/23 16:42:26.000.338,C:\Users\nanoTech\Documents\auto quarto delphi XE8\auto_quarto.fmx=C:\Users\nanoTech\Documents\Embarcadero\Studio\Projects\Unit2.fmx</Transaction>
+    <Transaction>2015/07/23 16:42:26.000.338,C:\Users\nanoTech\Documents\auto quarto delphi XE8\auto_quarto.pas=C:\Users\nanoTech\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/07/23 16:42:58.000.519,C:\Users\nanoTech\Documents\auto quarto delphi XE8\Project_auto_quarto.dproj=C:\Users\nanoTech\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+  </Transactions>
+	<BT_BuildType>AppStore</BT_BuildType>
+</BorlandProject>

@@ -1,0 +1,1110 @@
+object Form1: TForm1
+  Left = 0
+  Top = 30
+  Caption = 'Form1'
+  ClientHeight = 646
+  ClientWidth = 472
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  Top = 30
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 472.000000000000000000
+    Size.Height = 646.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 157.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemfavorites'
+      TabOrder = 0
+      Text = 'Connection Settings'
+      object FramedScrollBox2: TFramedScrollBox
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Position.X = -3.000000000000000000
+        Position.Y = -6.000000000000000000
+        Size.Width = 478.000000000000000000
+        Size.Height = 608.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Viewport.Width = 478.000000000000000000
+        Viewport.Height = 608.000000000000000000
+        object Button1: TButton
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          StyledSettings = [Family, FontColor]
+          Position.X = 16.000000000000000000
+          Position.Y = 96.000000000000000000
+          Size.Width = 214.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 10
+          Text = 'default external ip'
+          OnClick = Button1Click
+        end
+        object Button2: TButton
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          StyledSettings = [Family, FontColor]
+          Position.X = 272.000000000000000000
+          Position.Y = 96.000000000000000000
+          Size.Width = 190.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 9
+          Text = 'default internal ip'
+          OnClick = Button2Click
+        end
+        object Panel19: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 19.000000000000000000
+          Position.Y = 15.000000000000000000
+          Size.Width = 459.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          object Label23: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Size.Width = 174.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'URL:'
+          end
+          object edit_url: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 0
+            Text = '192.168.25.6'
+            TextSettings.Font.Size = 20.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Position.X = 80.000000000000000000
+            Size.Width = 358.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        object Panel20: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 19.000000000000000000
+          Position.Y = 55.000000000000000000
+          Size.Width = 459.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          object Label24: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Size.Width = 174.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Porta:'
+          end
+          object edit_port: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 0
+            MaxLength = 4
+            Text = '1000'
+            TextSettings.Font.Size = 20.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Position.X = 97.000000000000000000
+            Size.Width = 341.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+            OnKeyDown = edit_portKeyDown
+          end
+        end
+        object Panel21: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 19.000000000000000000
+          Position.Y = 127.000000000000000000
+          Size.Width = 459.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          object Label25: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 9.000000000000000000
+            Size.Width = 238.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            Text = 'Refresh Rate(seconds):'
+          end
+          object editRefresh: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 0
+            MaxLength = 5
+            Text = '1'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Position.X = 247.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Width = 193.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Style, FontColor]
+            OnKeyDown = editRefreshKeyDown
+          end
+        end
+        object debug: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          ReadOnly = True
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 24.000000000000000000
+          Position.Y = 240.000000000000000000
+          Size.Width = 318.000000000000000000
+          Size.Height = 305.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 11
+          Viewport.Width = 310.000000000000000000
+          Viewport.Height = 297.000000000000000000
+        end
+        object debug2: TLabel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 24.000000000000000000
+          Position.Y = 217.000000000000000000
+          Size.Width = 166.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          Text = 'Debug:'
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 158.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemcontacts'
+      TabOrder = 0
+      Text = 'Controle'
+      object FramedScrollBox1: TFramedScrollBox
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Position.X = -4.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 474.000000000000000000
+        Size.Height = 600.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 474.000000000000000000
+        Viewport.Height = 600.000000000000000000
+        object Panel1: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 184.000000000000000000
+          Size.Width = 467.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object btnFiltro: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Ligado'
+            TintColor = claGreen
+            OnClick = btnFiltroClick
+          end
+          object Label1: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 8.000000000000000000
+            Size.Width = 238.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Filtro de Linha:'
+          end
+        end
+        object Panel10: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 488.000000000000000000
+          Size.Width = 467.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 17
+          object btnAcessRodrigo: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 126.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Permitir'
+            TintColor = claGreen
+            OnClick = btnAcessRodrigoClick
+          end
+          object Label12: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 8.000000000000000000
+            Size.Width = 270.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Acesso Rodrigo:'
+          end
+        end
+        object Panel11: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 536.000000000000000000
+          Size.Width = 467.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 16
+          object btnAcessSueli: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 126.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Permitir'
+            TintColor = claGreen
+            OnClick = btnAcessSueliClick
+          end
+          object Label13: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 8.000000000000000000
+            Size.Width = 270.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Acesso Sueli:'
+          end
+        end
+        object Panel2: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 136.000000000000000000
+          Size.Width = 467.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnComputador: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Ligado'
+            TintColor = claGreen
+            OnClick = btnComputadorClick
+          end
+          object Label2: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 8.000000000000000000
+            Size.Width = 262.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Computador:'
+          end
+        end
+        object Panel3: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 232.000000000000000000
+          Size.Width = 475.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object btnTelevisao: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Ligada'
+            TintColor = claGreen
+            OnClick = btnTelevisaoClick
+          end
+          object Label3: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 8.000000000000000000
+            Size.Width = 182.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Televis'#227'o:'
+          end
+        end
+        object Panel4: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 467.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object btnLuz: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Acesa'
+            TintColor = claGreen
+            OnClick = btnLuzClick
+          end
+          object Label4: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 8.000000000000000000
+            Size.Width = 174.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Luz:'
+          end
+        end
+        object Panel5: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 384.000000000000000000
+          Size.Width = 483.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object btnAutoPc: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 126.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Sim'
+            TintColor = claGreen
+            OnClick = btnAutoPcClick
+          end
+          object Label5: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 8.000000000000000000
+            Size.Width = 246.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Auto Ligar PC:'
+          end
+        end
+        object Panel6: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 39.000000000000000000
+          Size.Width = 467.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          object btnPorta: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Trancada'
+            TintColor = claGreen
+            OnClick = btnPortaClick
+          end
+          object Label7: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 8.000000000000000000
+            Size.Width = 174.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Porta:'
+          end
+        end
+        object Panel7: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 288.000000000000000000
+          Size.Width = 467.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 9
+          object btnAutoTrancar: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 126.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Sim'
+            TintColor = claGreen
+            OnClick = btnAutoTrancarClick
+          end
+          object Label8: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 8.000000000000000000
+            Size.Width = 262.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Auto Trancar:'
+          end
+        end
+        object Panel8: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 336.000000000000000000
+          Size.Width = 467.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 10
+          object btnAutoLuz: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 126.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Sim'
+            TintColor = claGreen
+            OnClick = btnAutoLuzClick
+          end
+          object Label9: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 8.000000000000000000
+            Size.Width = 246.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Auto Controlar Luz:'
+          end
+        end
+        object Panel9: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 440.000000000000000000
+          Size.Width = 467.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          object btnAcessAdriana: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 126.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Permitir'
+            TintColor = claGreen
+            OnClick = btnAcessAdrianaClick
+          end
+          object Label11: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = 8.000000000000000000
+            Size.Width = 262.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Acesso Adriana:'
+          end
+        end
+        object Panel26: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 11.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 467.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          object Button3: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Position.X = 312.000000000000000000
+            Size.Width = 134.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'refresh'
+            TintColor = claGold
+            OnClick = Button3Click
+          end
+          object Label6: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Size.Width = 174.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Refresh:'
+          end
+        end
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 157.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemsearch'
+      TabOrder = 0
+      Text = 'Variaveis'
+      object FramedScrollBox3: TFramedScrollBox
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Size.Width = 470.000000000000000000
+        Size.Height = 601.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 470.000000000000000000
+        Viewport.Height = 601.000000000000000000
+        object Panel12: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 3.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 467.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 11
+          object Label14: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = -8.000000000000000000
+            Size.Width = 230.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            Text = 'Acessos Adriana:'
+          end
+          object editAdriana: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 1
+            Text = '0'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Position.X = 384.000000000000000000
+            Enabled = False
+            Size.Width = 70.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+          end
+        end
+        object Panel13: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 3.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 478.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 10
+          object Label15: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = -8.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            Text = 'Acessos Rodrigo:'
+          end
+          object editRodrigo: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 1
+            Text = '0'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Position.X = 384.000000000000000000
+            Enabled = False
+            Size.Width = 65.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+          end
+        end
+        object Panel14: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 3.000000000000000000
+          Position.Y = 104.000000000000000000
+          Size.Width = 470.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          object Label16: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = -8.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            Text = 'Acessos ROOT:'
+          end
+          object editRoot: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 1
+            Text = '0'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Position.X = 384.000000000000000000
+            Enabled = False
+            Size.Width = 65.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+          end
+        end
+        object Panel15: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 3.000000000000000000
+          Position.Y = 151.000000000000000000
+          Size.Width = 470.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 15
+          object btnEstadoPorta: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Enabled = False
+            Position.X = 328.000000000000000000
+            Size.Width = 121.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Aberta'
+            TintColor = claGreen
+          end
+          object Label18: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = -8.000000000000000000
+            Size.Width = 281.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Estado da Porta:'
+          end
+        end
+        object Panel16: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 3.000000000000000000
+          Position.Y = 183.000000000000000000
+          Size.Width = 470.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 12
+          object btnEstadoJanela: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Enabled = False
+            Position.X = 328.000000000000000000
+            Size.Width = 121.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Aberta'
+            TintColor = claGreen
+          end
+          object Label19: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = -8.000000000000000000
+            Size.Width = 281.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Estado da Janela:'
+          end
+        end
+        object Panel17: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 3.000000000000000000
+          Position.Y = 223.000000000000000000
+          Size.Width = 478.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 14
+          object Label21: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = -8.000000000000000000
+            Size.Width = 313.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Luminosidade Ambiente:'
+          end
+          object pbLuminosidade: TProgressBar
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Orientation = Horizontal
+            Position.X = 256.000000000000000000
+            Size.Width = 193.000000000000000000
+            Size.Height = 10.000000000000000000
+            Size.PlatformDefault = False
+            Value = 100.000000000000000000
+          end
+        end
+        object Panel18: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 3.000000000000000000
+          Position.Y = 255.000000000000000000
+          Size.Width = 470.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 13
+          object Label22: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = -8.000000000000000000
+            Size.Width = 313.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            Text = 'Luminosidade Minima:'
+          end
+          object trackLuminosidade: TTrackBar
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Orientation = Horizontal
+            Position.X = 248.000000000000000000
+            Size.Width = 201.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnDragLeave = trackLuminosidadeDragLeave
+          end
+        end
+        object Panel22: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 3.000000000000000000
+          Position.Y = 296.000000000000000000
+          Size.Width = 470.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          object editTemperatura: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 1
+            Text = '0'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Position.X = 368.000000000000000000
+            Enabled = False
+            Size.Width = 81.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+          end
+          object Label27: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = -8.000000000000000000
+            Size.Width = 129.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            Text = 'Temperatura('#186'C):'
+          end
+        end
+        object Panel23: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 3.000000000000000000
+          Position.Y = 336.000000000000000000
+          Size.Width = 470.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Label29: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = -8.000000000000000000
+            Size.Width = 169.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            Text = 'Hora de Ligar Lampada:'
+          end
+          object editLigarLamp: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 1
+            MaxLength = 2
+            Text = '0'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Position.X = 376.000000000000000000
+            Size.Width = 73.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+            OnKeyDown = editLigarLampKeyDown
+            OnExit = editLigarLampExit
+          end
+        end
+        object Panel24: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 3.000000000000000000
+          Position.Y = 368.000000000000000000
+          Size.Width = 470.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Label30: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = -8.000000000000000000
+            Size.Width = 137.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            Text = 'Horario de ligar PC:'
+          end
+          object editPCHora1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 4
+            MaxLength = 2
+            Text = '0'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Position.X = 264.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+            OnKeyDown = editPCHora1KeyDown
+            OnExit = editPCHora1Exit
+          end
+          object editPCMinuto1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 3
+            MaxLength = 2
+            Text = '0'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Position.X = 312.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+            OnKeyDown = editPCMinuto1KeyDown
+            OnExit = editPCHora1Exit
+          end
+          object editPCHora2: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 2
+            MaxLength = 2
+            Text = '0'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Position.X = 360.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+            OnKeyDown = editPCHora2KeyDown
+            OnExit = editPCHora1Exit
+          end
+          object editPCMinuto2: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 1
+            MaxLength = 2
+            Text = '0'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Position.X = 400.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+            OnKeyDown = editPCMinuto2KeyDown
+            OnExit = editPCHora1Exit
+          end
+          object Label31: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, FontColor]
+            Position.X = 296.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Text = ':'
+          end
+          object Label32: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, FontColor]
+            Position.X = 392.000000000000000000
+            Size.Width = 25.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Text = ':'
+          end
+          object Label33: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.X = 344.000000000000000000
+            Size.Width = 9.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            Text = #224
+          end
+        end
+        object Panel25: TPanel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 3.000000000000000000
+          Position.Y = 408.000000000000000000
+          Size.Width = 470.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label34: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, Style, FontColor]
+            Position.Y = -8.000000000000000000
+            Size.Width = 201.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            Text = 'Horario de desligar lampada:'
+          end
+          object editLampHora: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 2
+            MaxLength = 2
+            Text = '0'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Position.X = 352.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+            OnKeyDown = editLampHoraKeyDown
+            OnExit = editLampHoraExit
+          end
+          object editLampMinuto: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            TabOrder = 1
+            MaxLength = 2
+            Text = '0'
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Position.X = 400.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, FontColor]
+            OnKeyDown = editLampMinutoKeyDown
+            OnExit = editLampHoraExit
+          end
+          object Label36: TLabel
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            StyledSettings = [Family, FontColor]
+            Position.X = 392.000000000000000000
+            Size.Width = 17.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            Text = ':'
+          end
+        end
+      end
+      object Panel27: TPanel
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Position.X = 3.000000000000000000
+        Position.Y = 7.000000000000000000
+        Size.Width = 475.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object Button4: TButton
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Position.X = 320.000000000000000000
+          Size.Width = 134.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'refresh'
+          TintColor = claGold
+          OnClick = Button3Click
+        end
+        object Label10: TLabel
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          StyledSettings = [Family, Style, FontColor]
+          Position.Y = -8.000000000000000000
+          Size.Width = 198.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          Text = 'Refresh:'
+        end
+      end
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 365
+    Top = 619
+  end
+  object TCPClient: TIdTCPClient
+    ConnectTimeout = 0
+    Host = '192.168.25.6'
+    IPVersion = Id_IPv4
+    Port = 1000
+    ReadTimeout = 1000
+    ReuseSocket = rsTrue
+    Left = 416
+    Top = 616
+  end
+  object NotificationCenter: TNotificationCenter
+    Left = 448
+    Top = 617
+  end
+end

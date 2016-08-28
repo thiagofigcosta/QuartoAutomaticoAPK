@@ -1,0 +1,229 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited TabItem1: TTabItem
+      Size.Width = 150.000000000000000000
+      inherited FramedScrollBox2: TFramedScrollBox
+        Size.Width = 724.000000000000000000
+        Viewport.Width = 724.000000000000000000
+        Viewport.Height = 608.000000000000000000
+        inherited Button1: TButton
+          Position.X = 8.000000000000000000
+          Size.Width = 185.000000000000000000
+        end
+        inherited Button2: TButton
+          Position.X = 216.000000000000000000
+          Size.Width = 185.000000000000000000
+        end
+        inherited Panel19: TPanel
+          Position.X = 3.000000000000000000
+          Size.Width = 406.000000000000000000
+          inherited edit_url: TEdit
+            Position.X = 56.000000000000000000
+            Size.Width = 345.000000000000000000
+          end
+        end
+        inherited Panel20: TPanel
+          Position.X = 3.000000000000000000
+          Size.Width = 398.000000000000000000
+          inherited edit_port: TEdit
+            Size.Width = 304.000000000000000000
+          end
+        end
+        inherited Panel21: TPanel
+          Position.X = 3.000000000000000000
+          Size.Width = 406.000000000000000000
+          inherited editRefresh: TEdit
+            Position.X = 295.000000000000000000
+            Size.Width = 106.000000000000000000
+          end
+        end
+        inherited debug: TMemo
+          Position.X = 8.000000000000000000
+          Viewport.Width = 310.000000000000000000
+          Viewport.Height = 297.000000000000000000
+        end
+        inherited debug2: TLabel
+          Position.X = 8.000000000000000000
+        end
+      end
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 150.000000000000000000
+      inherited FramedScrollBox1: TFramedScrollBox
+        Size.Width = 725.000000000000000000
+        Viewport.Width = 725.000000000000000000
+        Viewport.Height = 600.000000000000000000
+        inherited Panel1: TPanel
+          inherited btnFiltro: TButton
+            Position.X = 272.000000000000000000
+          end
+        end
+        inherited Panel10: TPanel
+          inherited btnAcessRodrigo: TButton
+            Position.X = 272.000000000000000000
+          end
+        end
+        inherited Panel11: TPanel
+          inherited btnAcessSueli: TButton
+            Position.X = 272.000000000000000000
+          end
+        end
+        inherited Panel2: TPanel
+          inherited btnComputador: TButton
+            Position.X = 272.000000000000000000
+          end
+        end
+        inherited Panel3: TPanel
+          inherited btnTelevisao: TButton
+            Position.X = 272.000000000000000000
+          end
+        end
+        inherited Panel4: TPanel
+          inherited btnLuz: TButton
+            Position.X = 272.000000000000000000
+          end
+        end
+        inherited Panel5: TPanel
+          inherited btnAutoPc: TButton
+            Position.X = 272.000000000000000000
+            Position.Y = 8.000000000000000000
+          end
+        end
+        inherited Panel6: TPanel
+          inherited btnPorta: TButton
+            Position.X = 272.000000000000000000
+          end
+        end
+        inherited Panel7: TPanel
+          inherited btnAutoTrancar: TButton
+            Position.X = 272.000000000000000000
+          end
+        end
+        inherited Panel8: TPanel
+          inherited btnAutoLuz: TButton
+            Position.X = 272.000000000000000000
+          end
+        end
+        inherited Panel9: TPanel
+          inherited btnAcessAdriana: TButton
+            Position.X = 272.000000000000000000
+            Position.Y = -8.000000000000000000
+          end
+        end
+        inherited Panel26: TPanel
+          inherited Button3: TButton
+            Position.X = 272.000000000000000000
+            TintColor = claYellow
+          end
+          inherited Label6: TLabel
+            Position.Y = 8.000000000000000000
+          end
+        end
+      end
+    end
+    inherited TabItem3: TTabItem
+      Size.Width = 150.000000000000000000
+      inherited FramedScrollBox3: TFramedScrollBox
+        Size.Width = 721.000000000000000000
+        Viewport.Width = 721.000000000000000000
+        Viewport.Height = 601.000000000000000000
+        inherited Panel12: TPanel
+          TabOrder = 10
+          inherited editAdriana: TEdit
+            Position.X = 312.000000000000000000
+          end
+        end
+        inherited Panel13: TPanel
+          TabOrder = 6
+          inherited editRodrigo: TEdit
+            Position.X = 312.000000000000000000
+          end
+        end
+        inherited Panel14: TPanel
+          TabOrder = 5
+          inherited editRoot: TEdit
+            Position.X = 312.000000000000000000
+          end
+        end
+        inherited Panel15: TPanel
+          TabOrder = 12
+          inherited btnEstadoPorta: TButton
+            Position.X = 256.000000000000000000
+          end
+        end
+        inherited Panel16: TPanel
+          TabOrder = 7
+          inherited btnEstadoJanela: TButton
+            Position.X = 256.000000000000000000
+          end
+        end
+        inherited Panel17: TPanel
+          TabOrder = 9
+          inherited pbLuminosidade: TProgressBar
+            Position.X = 248.000000000000000000
+          end
+        end
+        inherited Panel18: TPanel
+          TabOrder = 8
+        end
+        inherited Panel22: TPanel
+          TabOrder = 4
+          inherited editTemperatura: TEdit
+            Position.X = 304.000000000000000000
+          end
+        end
+        inherited Panel23: TPanel
+          TabOrder = 3
+          inherited editLigarLamp: TEdit
+            Position.X = 344.000000000000000000
+          end
+        end
+        inherited Panel24: TPanel
+          inherited editPCHora1: TEdit
+            Position.X = 216.000000000000000000
+          end
+          inherited editPCMinuto1: TEdit
+            Position.X = 264.000000000000000000
+          end
+          inherited editPCHora2: TEdit
+            Position.X = 320.000000000000000000
+          end
+          inherited editPCMinuto2: TEdit
+            Position.X = 368.000000000000000000
+          end
+          inherited Label31: TLabel
+            Position.X = 256.000000000000000000
+          end
+          inherited Label32: TLabel
+            Position.X = 360.000000000000000000
+          end
+          inherited Label33: TLabel
+            Position.X = 304.000000000000000000
+          end
+        end
+        inherited Panel25: TPanel
+          inherited editLampHora: TEdit
+            Position.X = 320.000000000000000000
+          end
+          inherited editLampMinuto: TEdit
+            Position.X = 368.000000000000000000
+          end
+          inherited Label36: TLabel
+            Position.X = 360.000000000000000000
+          end
+        end
+      end
+      inherited Panel27: TPanel
+        inherited Button4: TButton
+          Position.X = 264.000000000000000000
+          TintColor = claYellow
+        end
+      end
+    end
+  end
+end

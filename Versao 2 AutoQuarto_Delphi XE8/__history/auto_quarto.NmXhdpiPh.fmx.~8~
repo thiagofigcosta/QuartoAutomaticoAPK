@@ -1,0 +1,49 @@
+inherited Form1_NmXhdpiPh: TForm1_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    inherited TabItem1: TTabItem
+      Size.Width = 133.000000000000000000
+      inherited FramedScrollBox2: TFramedScrollBox
+        Viewport.Width = 481.000000000000000000
+        Viewport.Height = 608.000000000000000000
+        inherited debug: TMemo
+          Viewport.Width = 310.000000000000000000
+          Viewport.Height = 297.000000000000000000
+        end
+      end
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 134.000000000000000000
+      inherited FramedScrollBox1: TFramedScrollBox
+        Viewport.Width = 474.000000000000000000
+        Viewport.Height = 600.000000000000000000
+        inherited Panel5: TPanel
+          inherited btnAutoPc: TButton
+            Position.Y = 8.000000000000000000
+          end
+        end
+        inherited Panel9: TPanel
+          inherited btnAcessAdriana: TButton
+            Position.Y = -8.000000000000000000
+          end
+        end
+        inherited Panel26: TPanel
+          inherited Label6: TLabel
+            Position.Y = 8.000000000000000000
+          end
+        end
+      end
+    end
+    inherited TabItem3: TTabItem
+      Size.Width = 133.000000000000000000
+      inherited FramedScrollBox3: TFramedScrollBox
+        Viewport.Width = 470.000000000000000000
+        Viewport.Height = 601.000000000000000000
+      end
+    end
+  end
+end
